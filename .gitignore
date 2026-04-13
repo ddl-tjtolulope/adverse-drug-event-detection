@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+*.csv
+*.pkl
+*.html
+exercises/e_HostingAndExecution/app_config.py
+.streamlit/config.toml
+.streamlit/pages.toml
