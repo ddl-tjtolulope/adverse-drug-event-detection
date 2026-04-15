@@ -3,6 +3,7 @@ __pycache__/
 *.egg-info/
 .env
 *.csv
+!raw_ade_reports.csv
 *.pkl
 *.html
 exercises/e_HostingAndExecution/app_config.py

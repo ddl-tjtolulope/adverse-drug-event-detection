@@ -110,6 +110,7 @@ def generate_dataset(n_rows: int = N_ROWS) -> pd.DataFrame:
     base_prob += (concurrent_meds >= 6).astype(float) * 0.10
     base_prob += (prior_ade == 1).astype(float) * 0.08
     base_prob += np.isin(reaction_category, ['cardiac', 'hematological']).astype(float) * 0.12
+
     base_prob += (reporter_type == 'physician').astype(float) * 0.05
     base_prob += (time_to_onset_days <= 3).astype(float) * 0.06
     base_prob += rng.normal(0, 0.05, n_rows)

@@ -99,7 +99,7 @@ base_prob += (renal_function == 'moderate_impairment').astype(float) * 0.08
 base_prob += (hepatic_function == 'moderate_impairment').astype(float) * 0.08
 base_prob += (concurrent_meds >= 6).astype(float) * 0.10
 base_prob += (prior_ade == 1).astype(float) * 0.08
-base_prob += (reaction_category.isin(['cardiac', 'hematological'])).astype(float) * 0.12  # type: ignore
+base_prob += np.isin(reaction_category, ['cardiac', 'hematological']).astype(float) * 0.12
 base_prob += (reporter_type == 'physician').astype(float) * 0.05
 base_prob += (time_to_onset_days <= 3).astype(float) * 0.06
 base_prob += rng.normal(0, 0.05, N_ROWS)
