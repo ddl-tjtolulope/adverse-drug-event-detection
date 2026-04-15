@@ -33,7 +33,7 @@ experiment_name      = f"ADE Classifier Training {domino_short_id()}"
 domino_working_dir   = os.environ.get("DOMINO_WORKING_DIR", ".")
 domino_project_name  = os.environ.get("DOMINO_PROJECT_NAME", "my-local-project")
 domino_artifact_dir  = domino_working_dir.replace('code', 'artifacts')
-domino_dataset_dir   = f"{domino_working_dir.replace('code', 'data')}/{domino_project_name}"
+domino_dataset_dir   = f"/domino/datasets/local/{domino_project_name}"
 
 ModelArtifact = Artifact(name="ADE Detection Models", type=MODEL)
 DataArtifact  = Artifact(name="Training Data",         type=DATA)

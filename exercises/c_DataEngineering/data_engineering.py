@@ -37,7 +37,7 @@ domino_project_name  = os.environ.get("DOMINO_PROJECT_NAME", "my-local-project")
 domino_project_owner = os.environ.get("DOMINO_PROJECT_OWNER",
                         os.environ.get("DOMINO_USER_NAME", "default-owner"))
 
-domino_dataset_dir  = f"{domino_working_dir.replace('code', 'data')}/{domino_project_name}"
+domino_dataset_dir  = f"/domino/datasets/local/{domino_project_name}"
 domino_artifact_dir = domino_working_dir.replace('code', 'artifacts')
 clean_path          = f"{domino_dataset_dir}/{clean_filename}"
 
