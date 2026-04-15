@@ -182,7 +182,7 @@ def main():
     print(f"  Bucket : {args.bucket}")
     print(f"  Region : {args.region}")
     print(f"  File   : {raw_key}")
-    print(f"\nData Source name to use in the workshop: ade_reports")
+    print(f"\nData Source name to use in the workshop: adverse-drug-event-detection")
 
 
 if __name__ == '__main__':

@@ -20,7 +20,7 @@ Set up your Domino project, configure team collaboration, and familiarise yourse
 
 ### 3. Configure the Data Source
 1. Navigate to **Data → Data Sources**
-2. Create a new S3 (or equivalent) data source named `ade_reports`
+2. Create a new S3 (or equivalent) data source named `adverse-drug-event-detection`
 3. Upload `raw_ade_reports.csv` to this data source
    - If you don't have the FAERS CSV, run `python generate_dataset.py` locally to generate synthetic data
 

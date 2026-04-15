@@ -18,7 +18,7 @@ Use a Jupyter workspace on Domino to explore the adverse drug event dataset, per
 2. Run all cells sequentially (Kernel → Restart & Run All)
 
 ### 3. Connect to the Data Source
-The notebook will connect to the `ade_reports` Domino Data Source you configured in Exercise 1. It will:
+The notebook will connect to the `adverse-drug-event-detection` Domino Data Source you configured in Exercise 1. It will:
 - Download `raw_ade_reports.csv` from the data source
 - Load it into a Pandas DataFrame
 

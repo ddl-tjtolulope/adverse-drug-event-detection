@@ -42,7 +42,7 @@ AWS credentials must be available via environment variables, `~/.aws/credentials
 - [ ] Select Data Source: `Amazon S3`
 - [ ] Bucket: `<your-s3-bucket-name>`
 - [ ] Region: `us-east-2`
-- [ ] Data Source Name: `ade_reports`
+- [ ] Data Source Name: `adverse-drug-event-detection`
 - [ ] Data Source Description:
   ```
   FDA FAERS-inspired adverse drug event dataset for the ADE Detection Workshop.
@@ -95,7 +95,7 @@ AWS credentials must be available via environment variables, `~/.aws/credentials
 **CREATE**
 
 - [ ] Set Default Compute Environment: `ADE-Detection-Workshop`
-- [ ] Add Data Source: `ade_reports`
+- [ ] Add Data Source: `adverse-drug-event-detection`
 - [ ] Add Tags: `Pharmacovigilance, Adverse Drug Events, Drug Safety, Python, XGBoost, AdaBoost, GaussianNB, API, App`
 
 ---
