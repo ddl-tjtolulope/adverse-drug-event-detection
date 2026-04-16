@@ -42,7 +42,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends gcc && \
 # Add missing library for uWSGI
 ARG LDFLAGS=-fno-lto
 ENV LDFLAGS=-fno-lto
-ENV PYTHONPATH="${PYTHONPATH}:/mnt/code"
+ENV PYTHONPATH="${PYTHONPATH}:/mnt/code:/mnt"
 
 # Install required packages
 RUN pip install --no-cache-dir \
