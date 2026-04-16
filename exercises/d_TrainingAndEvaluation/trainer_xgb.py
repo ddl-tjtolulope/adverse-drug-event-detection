@@ -21,8 +21,6 @@ model_obj  = XGBClassifier(
     tree_method="hist",
     n_jobs=-1,
     max_bin=64,
-    sketch_eps=0.2,
-    use_label_encoder=False,
     eval_metric="auc",
 )
 
